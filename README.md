@@ -7,8 +7,8 @@ Doctor Media Management: Doctors can upload and manage health-related posts and 
 Cross-Platform Accessibility: The platform is accessible nationwide, offering convenience and flexibility for users to connect with healthcare professionals.
 
 
-<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img1.jpeg?raw=true" alt="medpal" width="800" height="500">
-<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img2.jpeg?raw=true" alt="medpal" width="800" height="500">
+<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img1.png?raw=true" alt="medpal" width="800" height="500">
+<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img2.png?raw=true" alt="medpal" width="800" height="500">
 
 
 
