@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-zinc-700 p-1  sticky top-0">
+      <nav className="bg-blue-500 p-1  sticky top-0">
         <div className="flex justify-between items-center">
           {user && (
             <div className="relative">
@@ -102,6 +102,40 @@ const Navbar = () => {
                       View Profile
                     </NavLink>
                   </li>
+                  <li className="p-2">
+                    <NavLink
+                      to={`/profile/${user._id}`}
+                      onClick={toggleSubmenu}
+                      className="text-center flex items-center hover:bg-zinc-200 p-2 rounded-xl"
+                    >
+                      <CgProfile className="mr-1" />
+                      Book Appointment
+                    </NavLink>
+                  </li>
+                  <li className="p-2">
+                    <NavLink
+                      to={`/profile/${user._id}`}
+                      onClick={toggleSubmenu}
+                      className="text-center flex items-center hover:bg-zinc-200 p-2 rounded-xl"
+                    >
+                      <CgProfile className="mr-1" />
+                      My Appointments
+                    </NavLink>
+                  </li>
+                  {(user.role === "admin" || user.role === "staff") && (
+                  <>
+                  <li className="p-2">
+                    <NavLink
+                      to={`/profile/${user._id}`}
+                      onClick={toggleSubmenu}
+                      className="text-center flex items-center hover:bg-zinc-200 p-2 rounded-xl"
+                    >
+                      <CgProfile className="mr-1" />
+                      All Appointments
+                    </NavLink>
+                  </li>
+                  </>
+                  )}
                   {/* <li className="p-2">
                     <NavLink
                       to="/connections"
@@ -185,7 +219,7 @@ const Navbar = () => {
                   user.role === "admin" ||
                   user.role === "staff") && (
                   <>
-                    <li className="text-zinc-400 self-center font-sans">
+                    <li className="text-zinc-700 self-center font-sans">
                       Hello {user.name}
                     </li>
                     <li className="text-white self-center">
@@ -193,8 +227,8 @@ const Navbar = () => {
                         to="/"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
                       >
                         <AiOutlineHome className="mr-1 " /> Home
@@ -205,8 +239,8 @@ const Navbar = () => {
                         to="/posts"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
 
                       >
@@ -218,8 +252,8 @@ const Navbar = () => {
                         to="/myvideo"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
                       >
                         <MdOutlineOndemandVideo className="mr-1" /> My Videos
@@ -230,8 +264,8 @@ const Navbar = () => {
                         to="/videoposts"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
                       >
                         <MdOutlineVideoLibrary className="mr-1" /> Videos
@@ -242,8 +276,8 @@ const Navbar = () => {
                         to="/addwork"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
                       >
                         <MdWorkspacePremium className="mr-1" /> Add Work
@@ -258,8 +292,8 @@ const Navbar = () => {
                         to="/users"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                            : "flex items-center hover:bg-zinc-600 rounded-xl"
+                            ? "flex items-center p-1 bg-blue-600 font-boldrounded-xl underline"
+                            : "flex items-center hover:bg-blue-600 rounded-xl"
                         }
                       >
                         <HiOutlineUsers className="mr-1" />
@@ -284,11 +318,11 @@ const Navbar = () => {
                     to="/ai"
                     className={({ isActive }) =>
                       isActive
-                        ? "flex items-center p-1 bg-zinc-600 rounded-xl underline"
-                        : "flex items-center hover:bg-zinc-600 rounded-xl"
+                        ? "flex items-center p-1 bg-blue-600 font-bold rounded-xl underline"
+                        : "flex items-center hover:bg-blue-600 rounded-xl"
                     }
                   >
-                    <BsChatSquareDots className="mr-1" /> Chat
+                    <BsChatSquareDots className="mr-1" /> AI Chat
                   </NavLink>
                 </li>
               </>
@@ -439,7 +473,7 @@ const Navbar = () => {
                         }
                         onClick={closeDropdown}
                       >
-                        <BsChatSquareDots /> Chat
+                        <BsChatSquareDots /> AI Chat
                       </NavLink>
                     </li>
                   </>

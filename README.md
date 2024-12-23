@@ -1,20 +1,24 @@
-# Find My Client
+# AI ASSISTED VIRTUAL HOSPITAL
 
-FMC allows users to: - Register profiles based on  Proffesion type. - Upload work samples via posts or videos. - Find Professionals or clients based on location preferences. - Follow Professionals or client profiles to track potential hires or employers.
+AI-Assisted Appointment Booking: Users can book appointments with doctors from any department across India.
+AI Health Assistance: AI-driven feature to answer health-related queries and provide personalized guidance.
+Appointment Tracking: Users can track and manage their own appointments through the platform.
+Doctor Media Management: Doctors can upload and manage health-related posts and videos to share with users.
+Cross-Platform Accessibility: The platform is accessible nationwide, offering convenience and flexibility for users to connect with healthcare professionals.
 
-<img src="https://github.com/DJGuruji/Fmc/blob/main/assets/img3.jpeg?raw=true" alt="FMC" width="800" height="500">
-<img src="https://github.com/DJGuruji/Fmc/blob/main/assets/img1.jpeg?raw=true" alt="FMC" width="800" height="500">
-<img src="https://github.com/DJGuruji/Fmc/blob/main/assets/img2.jpeg?raw=true" alt="FMC" width="800" height="500">
+
+<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img1.jpeg?raw=true" alt="medpal" width="800" height="500">
+<img src="https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital/blob/main/assets/img2.jpeg?raw=true" alt="medpal" width="800" height="500">
 
 
 
 ## Installation
 
-To get started with the Fmc, follow these steps:
+To get started with the project, follow these steps:
 
 
 ```bash
-https://github.com/DJGuruji/Fmc.git
+https://github.com/DJGuruji/AI-Assisted-Virtual-Hospital.git
 ```
 ## Front end setup
 
