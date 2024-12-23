@@ -26,19 +26,6 @@ router.get("/profile",protect,getProfile);
 router.get("/followers/:userId",protect,getFollowers);
 router.get("/following/:userId",protect,getFollowing);
 router.post("/generate-response",protect,postOpenai)
-// router.get("/profile", protect, (req, res) => {
-//   res.json({
-//     _id: req.user._id,
-//     name: req.user.name,
-//     email: req.user.email,
-//     mobile: req.user.mobile,
-//     photo: req.user.photo,
-//     state: req.user.state,
-//     job: req.user.job,
-//     district: req.user.district,
-//     office: req.user.office,
-//     officePlace: req.user.officePlace,
-//   });
-// });
+
 
 module.exports = router;

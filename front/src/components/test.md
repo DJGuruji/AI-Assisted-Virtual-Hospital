@@ -11,16 +11,16 @@ function AIChat() {
     try {
       const result = await axios.post('/users/generate-response', { prompt });
       setResponse(result.data.message);
-    } catch (error) {
-      console.error('API Error:', error);  // Log the error to debug
+    }catch (error) {
+    
       if (error.response && error.response.data && error.response.data.message) {
         toast.error(error.response.data.message);
       } else {
+        
         toast.error("An unexpected error occurred. Please try again later.");
       }
     }
   };
-  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
